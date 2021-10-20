@@ -257,7 +257,7 @@ Tak samo jak wyżej tylko zmienić index
 '''
 
 #Zadanie 7
-
+'''
 plik = open('przyklad.txt', 'r+')
 
 linia = plik.readline()
@@ -267,8 +267,8 @@ index = 0
 for i in range(len(value)):
     if value[index-1] == value[index]:
         #print(value[index])
-        how = value[index].replace(value[index], '')
-        print(how)
+        how = (value[index].replace(value[index], ''))
+        plik.write(how)
         
         
     else: print(value[index])
@@ -276,57 +276,4 @@ for i in range(len(value)):
 
 
 plik.close()
-
-
-
-
-
-
-
-
-'''
-def zlicz_slowa():
-    ile_slow = 0
-    with open('przyklad.txt', 'r+') as plik:
-        for linia in plik.readlines():
-            slowa = linia.split()
-            ile_slow += len(slowa)
-            
-    return ile_slow
-
-def main():
-    print(f'Ilość słów to {zlicz_slowa()}')
-    
-if __name__ == '__main__':
-    main()
-
-
-plik = open('przyklad.txt', 'r+')
-
-linia = plik.readline()
-
-if linia == linia:
-    value = linia.split()
-    ile = set(value)
-    sorted(ile)
-    ile1=(str(ile))
-    print(ile)
-    #plik.write(ile1)
-else:
-    print('cyc')
-
-
-plik.close()
-
-
-
-    linia = plik.readline()
-value = linia.split()
-counter = 0
-
-for i in range(len(value)):
-    if value[3] == value[4]:
-        
-        print(value.remove(value[5]))
-    else: counter += 1
 '''
